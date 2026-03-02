@@ -1,0 +1,99 @@
+{
+  "site": {
+    "name": "Reuben Analytics Studio",
+    "tagline": "Data Analyst Consultant",
+    "description": "Turning raw data into strategic decisions. Data analysis consulting for ambitious businesses.",
+    "email": "atkingsclouse@gmail.com",
+    "calendlyUrl": "https://calendly.com/atkingsclouse/30min",
+    "linkedInUrl": "https://linkedin.com/in/ian-ayiro"
+  },
+  "portfolio": [
+    {
+      "id": "1",
+      "tag": "Business Intelligence",
+      "title": "Executive Sales Dashboard for Fintech Client",
+      "description": "Replaced fragmented spreadsheets with a single Tableau dashboard giving the leadership team real-time visibility into revenue, pipeline, and regional performance.",
+      "outcome": "Adopted as the primary reporting tool for weekly exec meetings; cut manual report prep by 15+ hours/month.",
+      "tools": ["Tableau", "SQL", "Excel"],
+      "imageLabel": "Dashboard"
+    },
+    {
+      "id": "2",
+      "tag": "Predictive Analytics",
+      "title": "Customer Churn Model for SaaS Company",
+      "description": "Built a propensity-to-churn model using Python and Scikit-learn, with clear feature importance and a scoring pipeline the team could run monthly.",
+      "outcome": "Client reported 23% reduction in churn in the first full quarter after rollout; model now drives retention outreach.",
+      "tools": ["Python", "Pandas", "Scikit-learn"],
+      "imageLabel": "Model"
+    },
+    {
+      "id": "3",
+      "tag": "Data Strategy & Reporting",
+      "title": "KPI Framework and Reporting Suite for Retail Group",
+      "description": "Defined a group-wide KPI dictionary, designed a reporting cadence (daily ops, weekly trading, monthly exec), and delivered Power BI reports aligned to it.",
+      "outcome": "Unified metrics across 3 brands; leadership now uses one source of truth for performance reviews.",
+      "tools": ["Power BI", "SQL", "dbt"],
+      "imageLabel": "Report"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "number": "01",
+      "icon": "◈",
+      "title": "Business Intelligence & Dashboards",
+      "description": "Custom interactive dashboards that surface the KPIs that matter most. Real-time visibility into your operations, sales, and growth metrics."
+    },
+    {
+      "id": "2",
+      "number": "02",
+      "icon": "◉",
+      "title": "Predictive Analytics & Forecasting",
+      "description": "Leverage machine learning and statistical models to anticipate trends, reduce churn, and make forward-looking decisions with confidence."
+    },
+    {
+      "id": "3",
+      "number": "03",
+      "icon": "◎",
+      "title": "Data Strategy & Governance",
+      "description": "Build a robust data infrastructure with clear ownership, quality standards, and a roadmap that scales with your organization."
+    },
+    {
+      "id": "4",
+      "number": "04",
+      "icon": "◆",
+      "title": "Custom Reporting & KPI Design",
+      "description": "Define the metrics that actually move the needle. I design reporting frameworks tailored to your industry, audience, and decision cadence."
+    },
+    {
+      "id": "5",
+      "number": "05",
+      "icon": "◐",
+      "title": "SQL / Python / BI Tool Consulting",
+      "description": "Hands-on consulting with Tableau, Power BI, Looker, BigQuery, Python, and SQL — training your team or building solutions from scratch."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "quote": "Ian transformed months of messy spreadsheets into a Tableau dashboard our entire executive team now uses weekly. The ROI was immediate.",
+      "author": "Sarah M.",
+      "role": "COO, Fintech Startup",
+      "initials": "SM"
+    },
+    {
+      "id": "2",
+      "quote": "The predictive churn model Ian built reduced our customer attrition by 23% in Q2. Absolutely world-class data thinking applied to a real business problem.",
+      "author": "David J.",
+      "role": "VP Growth, SaaS Company",
+      "initials": "DJ"
+    },
+    {
+      "id": "3",
+      "quote": "Ian doesn't just deliver reports — he asks the questions that make you think about your business differently. A true strategic partner, not just a consultant.",
+      "author": "Amina K.",
+      "role": "Director of Analytics, Retail Group",
+      "initials": "AK"
+    }
+  ]
+}
