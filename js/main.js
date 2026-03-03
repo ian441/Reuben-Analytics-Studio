@@ -18,10 +18,16 @@
     });
   }
 
+  // ── REMOVE CURSOR ON MOBILE ──
+  if (window.innerWidth <= 900) {
+    document.querySelector('.cursor')?.remove();
+    document.querySelector('.cursor-ring')?.remove();
+  }
+
   // ── CURSOR ──
   const cursor = document.getElementById('cursor');
   const cursorRing = document.getElementById('cursorRing');
-  if (cursor && cursorRing) {
+  if (cursor && cursorRing && window.innerWidth > 900) {
     let mouseX = 0, mouseY = 0;
     document.addEventListener('mousemove', function(e) {
       mouseX = e.clientX;
@@ -151,8 +157,13 @@
       entries.forEach(function(e) {
         if (e.isIntersecting) e.target.classList.add('visible');
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.1, rootMargin: '20px' });
     reveals.forEach(function(el) { observer.observe(el); });
+    
+    // manually trigger for elements already visible
+    reveals.forEach(function(el) { 
+      if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible'); 
+    });
   }
 
   // ── COUNTER ANIMATION ──
