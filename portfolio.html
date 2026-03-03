@@ -179,44 +179,8 @@
     </footer>
   </main>
   <!-- minimal script to handle reveal + mobile nav (without external dependencies) -->
-  <script>
-    (function() {
-      // remove cursor on mobile
-      if (window.innerWidth <= 900) {
-        document.querySelector('.cursor')?.remove();
-        document.querySelector('.cursor-ring')?.remove();
-      }
-      // reveal on scroll (simple)
-      const reveals = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting) entry.target.classList.add('visible');
-        });
-      }, { threshold: 0.1, rootMargin: '20px' });
-      reveals.forEach(el => observer.observe(el));
-      // manually trigger for elements already visible
-      reveals.forEach(el => { if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible'); });
-
-      // hamburger toggle
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('navLinks');
-      if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => navLinks.classList.toggle('mobile-open'));
-      }
-
-      // mark body as loaded (for cursor etc)
-      document.body.classList.add('loaded');
-
-      // very simple scrolled class for nav (optional)
-      window.addEventListener('scroll', () => {
-        const nav = document.getElementById('nav');
-        if (window.scrollY > 20) nav.classList.add('scrolled');
-        else nav.classList.remove('scrolled');
-      });
-    })();
-  </script>
-  <!-- external scripts are optional but we keep them (won't override static cards) -->
-  <!-- <script src="js/main.js"></script> -->
+  
+  <script src="js/main.js"></script> 
   <!-- <script src="js/contentful-portfolio.js"></script> (commented to preserve hardcoded projects) -->
 </body>
 </html>
