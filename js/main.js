@@ -247,7 +247,7 @@
         .then(function() { btn.disabled = false; });
       } else {
         var body = msg + '\n\n—\nFrom: ' + name + '\nEmail: ' + email + (company ? '\nCompany: ' + company : '');
-        window.location.href = 'mailto:atkingsclouse@gmail.com?subject=Consultation Enquiry from ' + encodeURIComponent(name) + '&body=' + encodeURIComponent(body);
+        window.location.href = 'mailto:reubenanalytics14@gmail.com?subject=Consultation Enquiry from ' + encodeURIComponent(name) + '&body=' + encodeURIComponent(body);
         status.textContent = 'Your email client will open. Send the draft to complete.';
         status.className = 'form-status success';
       }
