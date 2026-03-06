@@ -588,7 +588,6 @@ section { padding: 120px 5%; }
   position: relative; overflow: hidden;
 }
 .about-photo::before {
-  content: 'IA';
   font-family: var(--font-display);
   font-size: 8rem; font-weight: 700;
   color: rgba(201,168,76,0.12);
