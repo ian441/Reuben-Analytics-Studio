@@ -9,6 +9,6 @@
     "preview": "serve . -l 3000"
   },
   "devDependencies": {
-    "serve": "^14.2.0"
+    "serve": "^14.2.6"
   }
 }

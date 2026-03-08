@@ -583,15 +583,8 @@ section { padding: 120px 5%; }
 .about-photo-wrap { position: relative; aspect-ratio: 3/4; }
 .about-photo {
   width: 100%; height: 100%;
-  background: linear-gradient(135deg, #0c1830 0%, #1a2a4a 50%, #0a1428 100%);
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
-}
-.about-photo::before {
-  font-family: var(--font-display);
-  font-size: 8rem; font-weight: 700;
-  color: rgba(201,168,76,0.12);
-  letter-spacing: -0.05em;
 }
 .about-photo-border {
   position: absolute; inset: -12px;
