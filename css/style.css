@@ -500,7 +500,6 @@ section { padding: 120px 5%; }
 }
 .portfolio-card-image {
   aspect-ratio: 16/10;
-  background: linear-gradient(135deg, var(--bg3) 0%, #0c1830 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -508,7 +507,6 @@ section { padding: 120px 5%; }
   overflow: hidden;
 }
 .portfolio-card-image::before {
-  content: var(--card-label, 'Project');
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 600;
@@ -519,7 +517,9 @@ section { padding: 120px 5%; }
 .portfolio-card-image img {
   width: 100%;
   height: 100%;
+  /* fill the card area uniformly, cropping when necessary */
   object-fit: cover;
+  object-position: center center;
 }
 .portfolio-card-body { padding: 1.8rem 1.8rem 2rem; }
 .portfolio-card-tag {
@@ -554,7 +554,6 @@ section { padding: 120px 5%; }
   gap: 0.5rem;
 }
 .portfolio-card-outcome::before {
-  content: '';
   width: 6px;
   height: 6px;
   background: var(--gold);
@@ -849,6 +848,19 @@ footer {
   .form-row { grid-template-columns: 1fr; }
   body { cursor: auto; }
   .cursor, .cursor-ring { display: none !important; }
+
+  /* portfolio adjustments for narrower screens */
+  .portfolio-grid {
+    grid-template-columns: 1fr;    /* one column stack */
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .portfolio-card-body {
+    padding: 1.5rem 1.5rem 1.8rem;
+  }
+  .portfolio-card h3 {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 600px) {
   .nav-cta {
@@ -861,6 +873,12 @@ footer {
   .footer-grid { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
+
+  /* even tighter layout on small phones */
+  .portfolio-card-body {
+    padding: 1.2rem 1.2rem 1.5rem;
+  }
+  .portfolio-card h3 { font-size: 1.1rem; }
 }
 /* Add to your CSS */
 @media (max-width: 768px) {
